@@ -6,11 +6,11 @@ float x = 1.1;
 float y = 1.0;
 float z = 0.1;
 
-float c = 1.1;
-float d = 1.0;
-float e = 0.1;
+float c = 1.141;
+float d = -1.0;
+float e = 0.01;
 
-float b = 0.1998;
+float b = 0.198;
 
 ArrayList<PVector> points = new ArrayList<PVector>();
 ArrayList<PVector> points2 = new ArrayList<PVector>();
@@ -33,9 +33,9 @@ void draw(){
  y = y + dy;
  z = z + dz;
  
- float dc = (sin(c) - b*c)*dt;
- float dd = (sin(d) - b*d)*dt;
- float de = (sin(e) - b*e)*dt;
+ float dc = (sin(d) - b*c)*dt;
+ float dd = (sin(e) - b*d)*dt;
+ float de = (sin(c) - b*e)*dt;
  
  c = c + dc;
  d = d + dd;
@@ -51,9 +51,9 @@ void draw(){
  //point(x,y,z);
  println(c,d,e);
  
-
-
-println(points2);
+ for(PVector v: points2){
+   point(v.x,v.y,v.z);
+ }
  
  for(PVector v: points){
   point(v.x,v.y,v.z); 
