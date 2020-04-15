@@ -2,7 +2,7 @@ import peasy.*;
 
 //PeasyCam cam;
 
-float x = 0.01;
+float x = 0.1;
 float y = 0.0;
 float z = 0.0;
 
@@ -10,7 +10,7 @@ float b = 0.1998;
 
 void setup(){
   background(0);
-  size(200,200,P3D);
+  size(500,500,P3D);
   //cam = new PeasyCam(this,600);
   
 }
@@ -27,7 +27,7 @@ void draw(){
  println(x,y,z);
  
  translate(width/2, height/2);
- scale(1);
+ scale(10);
  stroke(255);
  point(x,y,z);
 }
