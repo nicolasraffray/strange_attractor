@@ -1,22 +1,30 @@
 import peasy.*;
 
-//PeasyCam cam;
+PeasyCam cam;
 
-float x = 0.1;
-float y = 0.0;
-float z = 0.0;
+float x = 1.1;
+float y = 1.0;
+float z = 0.1;
+
+float c = 1.1;
+float d = 1.0;
+float e = 0.1;
 
 float b = 0.1998;
 
+ArrayList<PVector> points = new ArrayList<PVector>();
+ArrayList<PVector> points2 = new ArrayList<PVector>();
+
+
 void setup(){
-  background(0);
-  size(500,500,P3D);
-  //cam = new PeasyCam(this,600);
+  size(600,600,P3D);
+  cam = new PeasyCam(this,600);
   
 }
 
 void draw(){
- float dt = 0.01;
+ background(255);
+ float dt = 0.1;
  float dx = (sin(y) - b*x)*dt;
  float dy = (sin(z) - b*y)*dt;
  float dz = (sin(x) - b*z)*dt;
@@ -24,10 +32,30 @@ void draw(){
  x = x + dx;
  y = y + dy;
  z = z + dz;
- println(x,y,z);
  
- translate(width/2, height/2);
- scale(10);
- stroke(255);
- point(x,y,z);
+ float dc = (sin(c) - b*c)*dt;
+ float dd = (sin(d) - b*d)*dt;
+ float de = (sin(e) - b*e)*dt;
+ 
+ c = c + dc;
+ d = d + dd;
+ e = e + de;
+
+ points.add(new PVector(x,y,z));
+ points2.add(new PVector(c,d,e));
+ 
+ translate(0, 0, 0);
+ scale(8);
+ //stroke(255);
+ noSmooth();
+ //point(x,y,z);
+ println(c,d,e);
+ 
+
+
+println(points2);
+ 
+ for(PVector v: points){
+  point(v.x,v.y,v.z); 
+ };
 }
