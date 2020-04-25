@@ -18,3 +18,7 @@ To Run the above:
 4. Click install
 5. Copy and paste the code and hit run! 
 
+Moving Forward: 
+
+I'm now looking to do something similar in javascript with the canvas that can be rendered on a website. Will look into having different strange attractors also with more particles. 
+
