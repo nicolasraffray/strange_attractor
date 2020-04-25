@@ -4,7 +4,17 @@ This strange attractor is a 3D symetric strange attractor. It can be viewed as t
 
 ![alt text](./equations.png)
 
-This project is being started to both learn and become familiar with Java. The rendering of the graphics will be done in P3 processing. 
+This project is being started to become familiar with Java. The rendering of the graphics will be done with P3 processing. You can move the shape as it forms with the mouse. The shape will look something like this: 
 
-Code in this repo should be pasted into the P3 GUI for running. Instructions on this are to come as code is written. 
+![alt text](./StrangeAttractor.jpg)
+
+Code in this repo should be pasted into the P3 GUI for running. 
+
+To Run the above:
+
+1. Download P3: https://processing.org/download/
+2. Open it up
+3. Go to Sketch > Import Library... > Add Library... and search for PeasyCam (this will let you move the 3d shape around) 
+4. Click install
+5. Copy and paste the code and hit run! 
 
