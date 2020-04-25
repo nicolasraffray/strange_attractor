@@ -22,3 +22,6 @@ Moving Forward:
 
 I'm now looking to do something similar in javascript with the canvas that can be rendered on a website. Will look into having different strange attractors also with more particles. 
 
+For more info on this strange attractor see the below link: 
+
+https://en.wikipedia.org/wiki/Thomas%27_cyclically_symmetric_attractor
