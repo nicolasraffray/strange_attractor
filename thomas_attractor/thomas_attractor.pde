@@ -69,10 +69,9 @@ void draw(){
 
  
  translate(0, 0, 0);
- scale(8);
  //stroke(255);
  //point(x,y,z);
- //println(c,d,e);
+ println(c,d,e);
  
  //float bright = 0;
  for(PVector v: points2){
